@@ -5,3 +5,4 @@
 4. JavaScript 데이터 객체와 JSON 생성 방법
   - JavaScript Object: var n = new Boolean(true) / new Number(1) / new String("Hello") / new Array() / new Object()
   - JavaScript Object Notation(JSON): var n = true / 1 / 'Hello' / [] / {}
+  - 자바스크립트에서 객체를 표현하는 방법이 자료를 저장하는 방식으로 많이 쓰인다고 한다. (JSON이 굉장히 낯이 익었었는 데, 생각해보니까 데이터 분석할 때 데이터파일 확장자가 JSON으로 되어있었던 것 같다.)
