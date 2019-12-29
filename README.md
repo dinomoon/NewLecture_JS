@@ -12,4 +12,7 @@
 6. JSON.parse('{"id":1, "title": "NewLecture"}')라고 하면 알아서 parsing해준다. (parse: 문장을 문법적으로 분석하다.)
   - JSON.parse('{id:1, title: "NewLecture"}') 는 에러가 난다.(속성을 문자열로 표현줘야함)
   -> JSON.stringfy를 사용해 속성을 문자열로 바꾼 뒤 parse하면 된다.
- 
+7. ==와 ===의 차이: ==는 값을 비교하는 것이고, ===는 박스가 같은지 확인하는 것이다.
+  - var x = 3; var y =3; -> x==y(true), x===y(true) 같은 값 또는 같은 객체는 박스를 두개 만들지 않는다.
+  - var x = 3; var y = new Number(3) -> x==y(true), x===y(false)
+8. 3+"2" => 32  // 3-"2" => 1  결론: +에서는 숫자가 문자열로 변하는 데 -에서는 문자열이 숫자로 변한다.
