@@ -10,8 +10,8 @@
   - eval('var x = 1;') => x에 1이 저장된다.
   - 쓰는 이유: JSON파일에서 데이터는 문자열로 저장되어있어서 eval로 실행시켜야한다.(JSON parser를 사용하는 것이 더 좋음.)
 6. JSON.parse('{"id":1, "title": "NewLecture"}')라고 하면 알아서 parsing해준다. (parse: 문장을 문법적으로 분석하다.)
-  - JSON.parse('{id:1, title: "NewLecture"}') 는 에러가 난다.(속성을 문자열로 표현줘야함)
-  -> JSON.stringfy를 사용해 속성을 문자열로 바꾼 뒤 parse하면 된다.
+  - JSON.parse('{id:1, title: "NewLecture"}') 는 에러가 난다.(키를 문자열로 표현줘야함)
+  -> JSON.stringfy를 사용해 키를 문자열로 바꾼 뒤 parse하면 된다.
 7. ==와 ===의 차이: ==는 값을 비교하는 것이고, ===는 박스가 같은지 확인하는 것이다.
   - var x = 3; var y =3; -> x==y(true), x===y(true) 같은 값 또는 같은 객체는 박스를 두개 만들지 않는다.
   - var x = 3; var y = new Number(3) -> x==y(true), x===y(false)
