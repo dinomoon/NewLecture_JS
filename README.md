@@ -9,7 +9,7 @@
 5. eval() -> 문자열을 실행시켜준다.
   - eval('var x = 1;') => x에 1이 저장된다.
   - 쓰는 이유: JSON파일에서 데이터는 문자열로 저장되어있어서 eval로 실행시켜야한다.(JSON parser를 사용하는 것이 더 좋음.)
-6. JSON.parse('{"id":1, "title": "NewLecture"}')라고 하면 알아서 parsing해준다.
+6. JSON.parse('{"id":1, "title": "NewLecture"}')라고 하면 알아서 parsing해준다. (parse: 문장을 문법적으로 분석하다.)
   - JSON.parse('{id:1, title: "NewLecture"}') 는 에러가 난다.(속성을 문자열로 표현줘야함)
   -> JSON.stringfy를 사용해 속성을 문자열로 바꾼 뒤 parse하면 된다.
-  
+ 
