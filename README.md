@@ -27,3 +27,4 @@
 17. 여러 스크립트 파일을 함께 사용할 때 초기화 함수의 문제 해결방법 문제: window.load = function(){}를 여러개 쓰면 덮어쓰여져서 마지막 스크립트 파일만 실행! 해결: window.addEventListener("load", function(){})을 사용하면 누적되기 때문에 해결가능!
 18. 빈칸과 주석도 노드에 포함된다. -> childNodes와 children의 차이점(children은 포함X)
 19. append와 appendChild의 차이점? appendChild는 노드만 추가할 수있지만 append는 문자열도 바로 삽입가능하다. 그리고 여러개의 노드를 한 번에 추가할 수도 있다.
+20. remove와 removeChild? remove는 자기 자신을 삭제, removeChild는 자식을 삭제 // append와 remove 모두 새로 추가된 기능
