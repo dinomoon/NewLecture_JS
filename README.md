@@ -26,4 +26,4 @@
 16. 만약 script에서 엘리먼트 객체를 함수 밖에서 사용하는데, body보다 위에 있다면, 엘리먼트 객체가 로드되기 전에 실행되기 때문에 오류가 생긴다. 이 때, 두개의 해결방법이 있는데, 하나는 script코드를 밑에 써주는 것이고, 하나는 init()이라는 함수를 만들어서 window.onload = init()이라고 하는 것이다.
 17. 여러 스크립트 파일을 함께 사용할 때 초기화 함수의 문제 해결방법 문제: window.load = function(){}를 여러개 쓰면 덮어쓰여져서 마지막 스크립트 파일만 실행! 해결: window.addEventListener("load", function(){})을 사용하면 누적되기 때문에 해결가능!
 18. 빈칸과 주석도 노드에 포함된다. -> childNodes와 children의 차이점(children은 포함X)
-19. append와 appendChild의 차이점? appendChild는 노드만 추가할 수있지만 append는 문자열도 바로 삽입가능하다.
+19. append와 appendChild의 차이점? appendChild는 노드만 추가할 수있지만 append는 문자열도 바로 삽입가능하다. 그리고 여러개의 노드를 한 번에 추가할 수도 있다.
