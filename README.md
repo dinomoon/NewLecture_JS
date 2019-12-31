@@ -33,3 +33,33 @@
 21. remove와 removeChild? remove는 자기 자신을 삭제, removeChild는 자식을 삭제 // append와 remove 모두 새로 추가된 기능
 22. childNodes와 children? children은 자식중에서 태그로 된 녀석들만 가져오지만 childNodes는 노드를 모두 가져옴(빈 문자열이나 주석도 노드라서 가져올 수있음..)
 23. template이라는 태그를 사용해서 틀을 만들 수 있다. template을 복제할 때는 document.importNode(template.content, true)를 사용한다. 노드를 복제할 때는 var cloneNode = trNode.cloneNode(true); //true는 깊은 복사를 의미한다(자식까지 복사)
+24. target을 쓰는 이유? 이벤트가 발생했을 때, 이벤트가 정확히 어디에서 발생했는지 알기위해서 사용! -> 더 정교하게 이벤트를 만들 수 있다.
+25. 버블링(이벤트 전파)? 상위 노드에게 이벤트를 주었는 데 하위 노드에서 해당 이벤트가 발생하면 버블링을 통해 상위 노드에서 하위 노드의 이벤트까지 처리해준다. -> 이벤트를 처리해야할 노드가 많을 때 유용
+26. 버블링막기? 버블링을 이미 썼는 데, 옆에 노드를 하나 더 만들고 거기에 이벤트를 처리해도 버블링이 발생할 것이다. 실행에는 문제가 없지만, 성능을 위해 버블링을 막아주는 것이 좋다. e.stopPropagation();
+27. ```javascript
+  //Ex4 - 서로 다른 기능의 여러 버튼을 가진 화면에서 이벤트를 처리하는 방법
+window.addEventListener('load', function(){
+    var section = document.querySelector("#section4");
+    var tbody = section.querySelector("tbody");
+
+    tbody.onclick = function(e){
+        var target = e.target
+        if (target.nodeName != "INPUT") return;
+
+        if(target.classList.contains("sel-button")){
+            var tr = target.parentElement;
+            //NOTE
+            for( ; tr.nodeName != "TR"; tr = tr.parentElement);
+            tr.style.backgroundColor = "dodgerblue";
+            tr.style.color = "white";
+        } else if(target.classList.contains("edit-button")){
+
+        } else if(target.classList.contains("del-button")){
+            var tr = target.parentElement;
+            //NOTE
+            for( ; tr.nodeName != "TR"; tr = tr.parentElement);
+            tr.remove();
+        }
+    }
+})
+```
