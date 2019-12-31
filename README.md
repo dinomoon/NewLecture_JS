@@ -1,3 +1,6 @@
+## 
+[DOM을 공부하자](https://dinomoon.github.io/NewLecture_JS/DOM%EC%9D%84%20%EA%B3%B5%EB%B6%80%ED%95%98%EC%9E%90/index.html)
+
 ## 알게 된 것
 1. 배열 -> splice를 이용해서 배열의 원소를 삭제할 수도 있고, 추가할 수도 있다.
 2. 객체 -> 정적으로 객체를 만드는 C,C++,Java와 달리 JS는 동적으로 객체를 만들 수 있다. (느닷없이 객체를 생성가능 var exam = new Object(); exam.kor = 30; exan.eng = 100;)
