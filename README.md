@@ -31,4 +31,4 @@
   - var trNode = noticeList.querySelector("tbody tr"); (첫 번째 tr만 가져온다.)(모두 가져오려면 querySelectorAll)
 20. append와 appendChild의 차이점? appendChild는 노드만 추가할 수있지만 append는 문자열도 바로 삽입가능하다. 그리고 여러개의 노드를 한 번에 추가할 수도 있다. ( 무엇을 써도 상관없는데 호환성을 생각한다면 appendChild를 쓰는 것이 좋다. )
 21. remove와 removeChild? remove는 자기 자신을 삭제, removeChild는 자식을 삭제 // append와 remove 모두 새로 추가된 기능
-22. template이라는 태그를 사용해서 틀을 만들 수 있다. template을 복제할 때는 document.importNode(template.content, true)를 사용한다.
+22. template이라는 태그를 사용해서 틀을 만들 수 있다. template을 복제할 때는 document.importNode(template.content, true)를 사용한다. 노드를 복제할 때는 var cloneNode = trNode.cloneNode(true); //true는 깊은 복사를 의미한다(자식까지 복사)
