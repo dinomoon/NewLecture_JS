@@ -1,4 +1,4 @@
-## 
+## 결과물   
 [DOM을 공부하자](https://dinomoon.github.io/NewLecture_JS/DOM%EC%9D%84%20%EA%B3%B5%EB%B6%80%ED%95%98%EC%9E%90/index.html)
 
 ## 알게 된 것
