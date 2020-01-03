@@ -53,15 +53,15 @@ window.addEventListener('load', function(){
             var tr = target.parentElement;
             //NOTE
             for( ; tr.nodeName != "TR"; tr = tr.parentElement);
-            tr.style.backgroundColor = "dodgerblue";
-            tr.style.color = "white";
+              tr.style.backgroundColor = "dodgerblue";
+              tr.style.color = "white";
         } else if(target.classList.contains("edit-button")){
 
         } else if(target.classList.contains("del-button")){
             var tr = target.parentElement;
             //NOTE
             for( ; tr.nodeName != "TR"; tr = tr.parentElement);
-            tr.remove();
+              tr.remove();
         }
     }
 })
