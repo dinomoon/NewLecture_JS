@@ -1,6 +1,12 @@
 ## 결과물   
 [DOM을 공부하자](https://dinomoon.github.io/NewLecture_JS/DOM%EC%9D%84%20%EA%B3%B5%EB%B6%80%ED%95%98%EC%9E%90/index.html)
 
+## 강의 정리
+##### 1강 학습가이드
+1. HTML요소들을 객체화 하는 load과정이 포함됨(HTML파일이 화면에 보여지기 전에 html파일에 있는 모든 요소들은 객체화 된다.)
+2. load과정을 통해 만들어진 document구조를 javascript를 사용해 조작할 수 있다.(사용자의 화면을 바꿀 수 있다. 반대로 사용자가 객체에 변화를 줄 수도 있다.(마우스, 키보드 등등 값을 입력할 때))
+3. javascript가 건드릴 수 있는 객체의 종류는 window(브라우저 화면), window.location(주소창), window.history(뒤로 가기, 앞으로 가기), window.document가 있다.
+
 ## 알게 된 것
 1. 배열 -> splice를 이용해서 배열의 원소를 삭제할 수도 있고, 추가할 수도 있다.
 2. 객체 -> 정적으로 객체를 만드는 C,C++,Java와 달리 JS는 동적으로 객체를 만들 수 있다. (느닷없이 객체를 생성가능 var exam = new Object(); exam.kor = 30; exan.eng = 100;)
