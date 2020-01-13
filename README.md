@@ -17,7 +17,8 @@
 3. var x = 3; 이라고 했을 떄 x는 3이라는 number객체의 이름이다!
 4. 값과 wrapper 클래스(javascript에서는 기본 형식(int, float...)이라는 것이 없고 모두 wrapper형 클래스(boolean, number, string)만 가지고 있다.)
 5. var x = 3;과 var x = new Number(3);은 같다.
-6. var x; 과 같이 변수만 선언하면? undefined!
+6. 변수의 초기값 비교(var x; 과 같이 변수만 선언하면? undefined! alert(x == undefined) 참!, undefined는 문자열이 아니라 특정한 값이다!)
+7. 어떤 메소드를 사용할 수 있는지는 할당되는 객체에 따라서 달라진다.
 
 ## 알게 된 것
 1. 배열 -> splice를 이용해서 배열의 원소를 삭제할 수도 있고, 추가할 수도 있다.
